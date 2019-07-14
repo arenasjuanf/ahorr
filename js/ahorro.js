@@ -10,9 +10,9 @@ function generarTabla(columnas, intervalo,montoMaximo){
   for ( var filas = 0; monto <= montoMaximo ; filas++ ) {
     x = x + '<tr>';
     
-    for( var contColumna = 0; contColumna <= columnas ; contColumna++ ){
+    for( var contColumna = 0; contColumna < columnas ; contColumna++ ){
       monto+=intervalo;
-      x = x + '<td>' + monto+ '</td>';
+      x = x + '<td>' + monto+'✔'+'</td>';
     }
 
     x = x + "</tr>";
